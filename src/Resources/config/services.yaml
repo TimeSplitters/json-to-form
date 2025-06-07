@@ -1,0 +1,19 @@
+# 
+# @author Christophe Abillama <christophe.abillama@gmail.com>
+# @license Apache-2.0
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    # Services du bundle
+    TimeSplitters\JsonFormBundle\Service\:
+        resource: '../../Service/'
+
+    # Services utilitaires
+    TimeSplitters\JsonFormBundle\Service\JsonPathHelper: ~
+    TimeSplitters\JsonFormBundle\Service\QuestionConditionEvaluator: ~
+    TimeSplitters\JsonFormBundle\Service\FormGeneratorService: ~
+    TimeSplitters\JsonFormBundle\Service\FormStateManager: ~
+    TimeSplitters\JsonFormBundle\Service\JsonToFormTransformer: ~
